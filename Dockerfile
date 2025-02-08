@@ -39,7 +39,8 @@ WORKDIR /app/backend
 RUN python manage.py collectstatic --noinput --verbosity 3
 
 # Expose the port (if needed, e.g., for development)
-EXPOSE 8000
+#EXPOSE 8000
 
 # Command to run the application (adjust based on your deployment needs)
-CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
+#CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:$PORT"]
