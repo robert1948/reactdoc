@@ -1,3 +1,6 @@
 Django>=3.2,<4.0
 gunicorn
 whitenoise
+django>=3.2,<4.0  # Adjust based on your Django version
+djangorestframework>=3.12.4  # Adjust based on your required version
+django-cors-headers>=3.10.1  # Adjust version as needed
