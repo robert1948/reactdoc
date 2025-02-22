@@ -1,0 +1,20 @@
+# Exclude Python virtual environment
+venv/
+
+# Exclude local Node modules (they will be installed in the container)
+node_modules/
+
+# Exclude git files
+.git
+.gitignore
+
+# Exclude editor settings
+.vscode/
+
+# Exclude public and src folders at the root if they're not used by Docker
+# (Make sure to adjust these if they are needed by your build process)
+public/
+src/
+
+# Exclude any other unnecessary files (logs, temp files, etc.)
+*.log

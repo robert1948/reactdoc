@@ -31,8 +31,8 @@ COPY --from=frontend-build /app/frontend/build ./build
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
-#EXPOSE 8000
+EXPOSE 8000
 
-#CMD ["gunicorn", "reactdoc.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "reactdoc.wsgi:application", "--bind", "0.0.0.0:8000"]
 
-CMD gunicorn reactdoc.wsgi:application --bind 0.0.0.0:$PORT
+#CMD gunicorn reactdoc.wsgi:application --bind 0.0.0.0:$PORT

@@ -1,0 +1,122 @@
+/* LandingPage.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #d8cdcdda;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .header {
+    background: linear-gradient(165deg, #667eea, #764ba2);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .cta button {
+    background: white;
+    color: #667eea;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .cta button:hover {
+    background: #c2b9b9;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* Services & Features Sections */
+  .services,
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #764ba2;
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+    margin: 60px 0;
+  }
+  
+  .contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .contact-form button {
+    background: #764ba2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  } /* End of .contact-form button */
+  
+  .contact-form button:hover {
+    background: #5b3d8a;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+  }
+  
